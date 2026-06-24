@@ -24,7 +24,7 @@ export function Navbar({ onCartClick }: { onCartClick?: () => void }) {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2.5">
             <span className="font-display font-700 text-xl text-cream-300 tracking-tight">
-              EDC<span className="text-gold-300">Forge</span>
+              Madena<span className="text-gold-300">Ent</span>
             </span>
           </Link>
 
