@@ -9,7 +9,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center gap-2.5 mb-4">
               <span className="font-display font-700 text-xl text-cream-300 tracking-tight">
-                EDC<span className="text-gold-300">Forge</span>
+                Madena<span className="text-gold-300">Ent</span>
               </span>
             </Link>
             <p className="font-body text-sm text-cream-500/70 max-w-sm leading-relaxed">
