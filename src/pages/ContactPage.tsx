@@ -39,17 +39,17 @@ export function ContactPage() {
             <div className="bg-dark-300/50 border border-dark-300/50 rounded-sm p-5">
               <Mail className="w-5 h-5 text-gold-300 mb-3" />
               <p className="font-body text-xs text-cream-500/50 uppercase tracking-wider mb-1">Email</p>
-              <p className="font-body text-sm text-cream-300 font-500">support@edcforge.com</p>
+              <p className="font-body text-sm text-cream-300 font-500">support@madenaent.com</p>
             </div>
             <div className="bg-dark-300/50 border border-dark-300/50 rounded-sm p-5">
               <Phone className="w-5 h-5 text-gold-300 mb-3" />
               <p className="font-body text-xs text-cream-500/50 uppercase tracking-wider mb-1">Phone</p>
-              <p className="font-body text-sm text-cream-300 font-500">+1 (555) 123-4567</p>
+              <p className="font-body text-sm text-cream-300 font-500">+254 798 999 010</p>
             </div>
             <div className="bg-dark-300/50 border border-dark-300/50 rounded-sm p-5">
               <MapPin className="w-5 h-5 text-gold-300 mb-3" />
               <p className="font-body text-xs text-cream-500/50 uppercase tracking-wider mb-1">Location</p>
-              <p className="font-body text-sm text-cream-300 font-500">Austin, Texas, USA</p>
+              <p className="font-body text-sm text-cream-300 font-500">Nairobi, Kenya</p>
             </div>
           </div>
 
