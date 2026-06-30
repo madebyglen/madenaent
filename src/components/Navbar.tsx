@@ -24,7 +24,11 @@ export function Navbar({ onCartClick }: { onCartClick?: () => void }) {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2.5">
             <span className="font-display font-700 text-xl text-cream-300 tracking-tight">
+<<<<<<< HEAD
               Madena<span className="text-gold-300">Ent</span>
+=======
+              Madena<span className="text-gold-300">Enterprises</span>
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
             </span>
           </Link>
 

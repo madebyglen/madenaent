@@ -14,6 +14,18 @@ class ProductBase(BaseModel):
     stock: int = 0
 
 
+<<<<<<< HEAD
+=======
+class ProductUpdate(BaseModel):
+    name: Optional[str] = None
+    description: Optional[str] = None
+    category: Optional[str] = None
+    price: Optional[Decimal] = None
+    image_url: Optional[str] = None
+    stock: Optional[int] = None
+
+
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
 class ProductCreate(ProductBase):
     pass
 

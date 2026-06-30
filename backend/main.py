@@ -3,11 +3,19 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
 from decimal import Decimal
 from database import (
+<<<<<<< HEAD
     create_product, get_products, get_product_by_id, delete_product,
     create_order, get_orders, update_order_status,
     create_message, get_messages, mark_message_read
 )
 from models import Product, ProductCreate, Order, OrderCreate, OrderStatusUpdate, Message, MessageCreate
+=======
+    create_product, get_products, get_product_by_id, update_product, delete_product,
+    create_order, get_orders, update_order_status,
+    create_message, get_messages, mark_message_read
+)
+from models import Product, ProductCreate, ProductUpdate, Order, OrderCreate, OrderStatusUpdate, Message, MessageCreate
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
 
 app = FastAPI(title="EDC Gear Store API", version="1.0.0")
 
@@ -36,6 +44,19 @@ async def get_product(product_id: str):
         raise HTTPException(status_code=404, detail="Product not found")
     return data
 
+<<<<<<< HEAD
+=======
+@app.patch("/api/products/{product_id}", response_model=Product)
+async def edit_product(product_id: str, product: ProductUpdate):
+    data = {k: v for k, v in product.model_dump(mode="json").items() if v is not None}
+    if not data:
+        raise HTTPException(status_code=400, detail="No fields to update")
+    updated = await update_product(product_id, data)
+    if not updated:
+        raise HTTPException(status_code=404, detail="Product not found")
+    return updated
+
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
 @app.delete("/api/products/{product_id}")
 async def remove_product(product_id: str):
     data = await delete_product(product_id)

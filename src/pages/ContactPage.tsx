@@ -39,17 +39,29 @@ export function ContactPage() {
             <div className="bg-dark-300/50 border border-dark-300/50 rounded-sm p-5">
               <Mail className="w-5 h-5 text-gold-300 mb-3" />
               <p className="font-body text-xs text-cream-500/50 uppercase tracking-wider mb-1">Email</p>
+<<<<<<< HEAD
               <p className="font-body text-sm text-cream-300 font-500">support@madenaent.com</p>
+=======
+              <p className="font-body text-sm text-cream-300 font-500">support@edcforge.com</p>
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
             </div>
             <div className="bg-dark-300/50 border border-dark-300/50 rounded-sm p-5">
               <Phone className="w-5 h-5 text-gold-300 mb-3" />
               <p className="font-body text-xs text-cream-500/50 uppercase tracking-wider mb-1">Phone</p>
+<<<<<<< HEAD
               <p className="font-body text-sm text-cream-300 font-500">+254 798 999 010</p>
+=======
+              <p className="font-body text-sm text-cream-300 font-500">+1 (555) 123-4567</p>
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
             </div>
             <div className="bg-dark-300/50 border border-dark-300/50 rounded-sm p-5">
               <MapPin className="w-5 h-5 text-gold-300 mb-3" />
               <p className="font-body text-xs text-cream-500/50 uppercase tracking-wider mb-1">Location</p>
+<<<<<<< HEAD
               <p className="font-body text-sm text-cream-300 font-500">Nairobi, Kenya</p>
+=======
+              <p className="font-body text-sm text-cream-300 font-500">Austin, Texas, USA</p>
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
             </div>
           </div>
 
@@ -93,7 +105,11 @@ export function ContactPage() {
                     type="tel" value={form.phone}
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
                     className="w-full bg-dark-400 border border-dark-200/50 text-cream-300 font-body rounded-sm px-4 py-3.5 focus:outline-none focus:border-gold-300/50 transition-colors placeholder:text-cream-500/25"
+<<<<<<< HEAD
                     placeholder="+254 700 000 000"
+=======
+                    placeholder="+1 234 567 890"
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
                   />
                 </div>
                 <div>

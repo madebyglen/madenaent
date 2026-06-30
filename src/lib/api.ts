@@ -39,6 +39,16 @@ export const api = {
       method: 'DELETE',
     }),
 
+<<<<<<< HEAD
+=======
+  updateProduct: (id: string, product: Partial<{ name: string; description: string; category: string; price: number; image_url: string; stock: number }>) =>
+    fetchJSON<any>(`${API_BASE}/products/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(product),
+    }).then(parseProduct),
+
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
   createOrder: (order: { customer_name: string; customer_email: string; customer_phone?: string; items: OrderItem[] }) =>
     fetchJSON<any>(`${API_BASE}/orders`, {
       method: 'POST',

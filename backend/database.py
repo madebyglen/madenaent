@@ -17,6 +17,15 @@ HEADERS = {
 
 client = httpx.AsyncClient(base_url=REST_BASE, headers=HEADERS, timeout=30.0)
 
+<<<<<<< HEAD
+=======
+async def update_product(product_id: str, data: dict):
+    resp = await client.patch("/products", params={"id": f"eq.{product_id}"}, json=data)
+    resp.raise_for_status()
+    result = resp.json()
+    return result[0] if result else None
+
+>>>>>>> 74b76218005a7641fa1236615cb473faf5b41b3d
 async def create_product(data: dict):
     resp = await client.post("/products", json=data)
     resp.raise_for_status()
