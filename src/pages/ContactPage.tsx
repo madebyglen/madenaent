@@ -93,7 +93,7 @@ export function ContactPage() {
                     type="tel" value={form.phone}
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
                     className="w-full bg-dark-400 border border-dark-200/50 text-cream-300 font-body rounded-sm px-4 py-3.5 focus:outline-none focus:border-gold-300/50 transition-colors placeholder:text-cream-500/25"
-                    placeholder="+1 234 567 890"
+                    placeholder="+254 700 000 000"
                   />
                 </div>
                 <div>
